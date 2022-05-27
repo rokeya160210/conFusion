@@ -5,8 +5,9 @@
 }
 .row-content {
     margin: 0px auto;
+    
     padding: 50px 0px 50px 0px;
-    border-bottom: 1px ridge;
+    /* border-bottom: 1px ridge; */
     min-height: 400px;
 }
 .history-content{
@@ -38,4 +39,10 @@ body{
 
 .navbar-dark {
      background-color: #512DA8;
+}
+
+a{
+    text-decoration: none;
+    color: #0f0f0f;
+
 }
