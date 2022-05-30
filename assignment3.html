@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Ristorante Con Fusion</title>
 </head>
 
@@ -34,7 +34,7 @@
                                 class="fa fa-address-card fa-lg"></span> Contact</a></li>
                 </ul>
                 <span class="navbar-text">
-                    <a id = "loginButton"  >
+                    <a data-toggle="modal" data-target="#loginModal">
                         <span class="fa fa-sign-in"></span> Login</a>
                 </span>
             </div>
@@ -83,7 +83,7 @@
     </div>
 
 
-    <div id="reserveModal" class="modal fade" role="dialog">
+    <div id="reserveform" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg" role="content">
             <!-- Reserve Modal content-->
             <div class="modal-content">
@@ -226,7 +226,7 @@
                         title="Or Call us at
                      <strong> +852 12345678</strong> " data-placement="bottom" href="#reserveform">Reserve Table
                     </a> -->
-                    <a class="btn btn-block nav-link btn-warning" id="reserveButton" >
+                    <a class="btn btn-block nav-link btn-warning" data-toggle="modal" data-target="#reserveform">
                         Reserve Table</a>
                 </div>
             </div>
@@ -572,15 +572,8 @@
                     $("#carouselButton").children("span").addClass('fa-pause');                    
                 }
             });
-            $("#loginButton").click(function(){
-                $("#loginModal").modal('show');
-            });
-            $("#reserveButton").click(function(){
-        $("#reserveModal").modal('show');
-        });
-    });
             
-        
+        });
     </script>
 
 </body>
